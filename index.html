@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Religare Health</title>
+    <link href="assets/css/style.css" type="text/css" rel="stylesheet">
+    <link href="assets/css/responsive.css" type="text/css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/css/intlTelInput.css">
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="containeri">
+    <header class="religare-header">
+        <div class="logo">
+            <img src="assets/images/logo.jpg" class="logo-img">
+        </div>
+    </header>
+    <div id="wave"></div>
+    <section class="content-section">
+        <h1 class="content-heading">Lorem Ipsum is simply dummy text of the printing and</h1>
+        <div class="slider-inputs">
+            <div class="active first-popup slider-content slider-step step1">
+                <h3 class="inner-heading"> Lorem Ipsum is simply <span class="special-text">Dummy</span></h3>
+                <p class="inner-text">Lorem Ipsum is simply dummy</p>
+                <div class="number-details">
+
+                    <input type="tel" id="phone" onkeyup="validateMobile()" maxlength="10" class="input-details"
+                           placeholder="Mobile no.">
+                    <span class="arrow mobile-validation-arrow"> <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                                      width="25" height="25"
+                                                                      viewBox="0 0 172 172"
+                                                                      style=" fill:#000000;"><g fill="none"
+                                                                                                fill-rule="nonzero"
+                                                                                                stroke="none"
+                                                                                                stroke-width="1"
+                                                                                                stroke-linecap="butt"
+                                                                                                stroke-linejoin="miter"
+                                                                                                stroke-miterlimit="10"
+                                                                                                stroke-dasharray=""
+                                                                                                stroke-dashoffset="0"
+                                                                                                font-family="none"
+                                                                                                font-weight="none"
+                                                                                                font-size="none"
+                                                                                                text-anchor="none"
+                                                                                                style="mix-blend-mode: normal"><path
+                            d="M0,172v-172h172v172z" fill="none"></path><g><path
+                            d="M129,150.5h-86c-11.87517,0 -21.5,-9.62483 -21.5,-21.5v-86c0,-11.87517 9.62483,-21.5 21.5,-21.5h86c11.87517,0 21.5,9.62483 21.5,21.5v86c0,11.87517 -9.62483,21.5 -21.5,21.5z"
+                            fill="#ffffff"></path><path
+                            d="M123.92958,52.2665l-48.62942,48.68317l-20.07025,-20.02367l-10.1265,10.148l30.21467,30.143l58.75233,-58.81683z"
+                            fill="#4caf50"></path></g></g></svg>
+</span>
+
+                </div>
+                <div class="continue-button">
+                    <button onclick="goNext(1,2)" class="main-button">Continue
+                        <span class="button-arrow"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                                        width="25" height="25"
+                                                        viewBox="0 0 172 172"
+                                                        style=" fill:#000000;"><g fill="none" fill-rule="nonzero"
+                                                                                  stroke="none" stroke-width="1"
+                                                                                  stroke-linecap="butt"
+                                                                                  stroke-linejoin="miter"
+                                                                                  stroke-miterlimit="10"
+                                                                                  stroke-dasharray=""
+                                                                                  stroke-dashoffset="0"
+                                                                                  font-family="none"
+                                                                                  font-weight="none" font-size="none"
+                                                                                  text-anchor="none"
+                                                                                  style="mix-blend-mode: normal"><path
+                                d="M0,172v-172h172v172z" fill="none"></path><g fill="#ffffff"><path
+                                d="M113.88281,49.88672l-7.55859,7.72656l23.01172,23.01172h-107.83594v10.75h107.83594l-23.01172,23.01172l7.55859,7.72656l36.11328,-36.11328z"></path></g></g></svg></span>
+                    </button>
+                </div>
+                <div class="action-dots">
+                    <div class="dots active"></div>
+                    <div class="dots"></div>
+                    <div class="dots"></div>
+                    <div class="condition"> I agree to <span class="underline-text">T & C.</span></div>
+                </div>
+            </div>
+            <div class="third-popup slider-content slider-step step2">
+                <h3 class="inner-heading"> Lorem Ipsum is simply <span class="special-text">Dummy</span></h3>
+                <p class="inner-text">Lorem Ipsum is simply dummy</p>
+                <p class="popup-ques">Lorem Ipsum is simply dummy?</p>
+                <div class="popup-answer-new">
+                    <div class="popup-answer-no" id="noSelect" onclick="showSecondStep('noSelect');">
+                        NO
+                        <div class="tick">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 width="20" height="20"
+                                 viewBox="0 0 172 172"
+                                 style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                   stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                   stroke-dashoffset="0"
+                                   font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                   style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g>
+                                        <path d="M157.66667,86c0,39.57792 -32.08875,71.66667 -71.66667,71.66667c-39.57792,0 -71.66667,-32.08875 -71.66667,-71.66667c0,-39.57792 32.08875,-71.66667 71.66667,-71.66667c39.57792,0 71.66667,32.08875 71.66667,71.66667z"
+                                              fill="#3e9023"></path>
+                                        <path d="M123.93317,52.2665l-48.62583,48.68317l-20.07383,-20.0165l-10.13367,10.13367l30.22183,30.15017l58.74875,-58.81683z"
+                                              fill="#ffffff"></path>
+                                    </g>
+                                </g>
+                            </svg>
+
+
+                        </div>
+
+                    </div>
+                    <div class="center-border"></div>
+                    <div class=" popup-answer-no " id="yesSelect" onclick="showSecondStep('yesSelect');">
+                        YES
+
+                        <div class="tick">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 width="20" height="20"
+                                 viewBox="0 0 172 172"
+                                 style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                   stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                   stroke-dashoffset="0"
+                                   font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                   style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g>
+                                        <path d="M157.66667,86c0,39.57792 -32.08875,71.66667 -71.66667,71.66667c-39.57792,0 -71.66667,-32.08875 -71.66667,-71.66667c0,-39.57792 32.08875,-71.66667 71.66667,-71.66667c39.57792,0 71.66667,32.08875 71.66667,71.66667z"
+                                              fill="#3e9023"></path>
+                                        <path d="M123.93317,52.2665l-48.62583,48.68317l-20.07383,-20.0165l-10.13367,10.13367l30.22183,30.15017l58.74875,-58.81683z"
+                                              fill="#ffffff"></path>
+                                    </g>
+                                </g>
+                            </svg>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden" id="second-step">
+                    <p class="second-ques"> Lorem Ipsum is simply dummy?</p>
+                    <div class="second-answer">
+                        <div onclick="goNext(2,3);selectMe('noSelectother')" id="noSelectother"
+                             class="second-answer-no">NO
+                        </div>
+                        <div onclick="goNext(2,3);selectMe('yesSelectother')" id="yesSelectother"
+                             class="second-answer-no">YES
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="action-dots">
+                    <div class="left-arrow" onclick="goNext(2,1)"><i class="left"></i></div>
+                    <div class="dots "></div>
+                    <div class="dots active"></div>
+                    <div class="dots"></div>
+                </div>
+
+            </div>
+            <div class="fourth-popup slider-content slider-step step3">
+                <h3 class="inner-heading"> Lorem Ipsum is simply <span class="special-text">Dummy</span></h3>
+                <p class="inner-text-new">Lorem Ipsum is simply dummy</p>
+                <p class="popup-ques-new">Lorem Ipsum is simply dummy?</p>
+                <div class="popup-answer">
+                    <div class="popup-answer-no-new">
+                        NO
+                    </div>
+                    <div class="center-border"></div>
+                    <div class="popup-answer-yes-new">
+                        YES
+
+                        <div class="tick-new">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                                 width="20" height="20"
+                                 viewBox="0 0 172 172"
+                                 style=" fill:#000000;">
+                                <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                   stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray=""
+                                   stroke-dashoffset="0"
+                                   font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                   style="mix-blend-mode: normal">
+                                    <path d="M0,172v-172h172v172z" fill="none"></path>
+                                    <g>
+                                        <path d="M157.66667,86c0,39.57792 -32.08875,71.66667 -71.66667,71.66667c-39.57792,0 -71.66667,-32.08875 -71.66667,-71.66667c0,-39.57792 32.08875,-71.66667 71.66667,-71.66667c39.57792,0 71.66667,32.08875 71.66667,71.66667z"
+                                              fill="#3e9023"></path>
+                                        <path d="M123.93317,52.2665l-48.62583,48.68317l-20.07383,-20.0165l-10.13367,10.13367l30.22183,30.15017l58.74875,-58.81683z"
+                                              fill="#ffffff"></path>
+                                    </g>
+                                </g>
+                            </svg>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-dots">
+                    <div class="left-arrow" onclick="goNext(3,2)"><i class="left"></i></div>
+                    <div class="dots "></div>
+                    <div class="dots"></div>
+                    <div class="dots active"></div>
+                </div>
+
+            </div>
+            <div></div>
+        </div>
+
+    </section>
+    <section class="question-section">
+        <div class="questions">
+            <h6 class="inner-heading">Lorem Ipsum is simply dummy?</h6>
+            <ul class="question-ul">
+                <li class="questions-li">
+                    <span class="green-color">Lorem Ipsum</span> is simply dummy
+                </li>
+                <li class="questions-li">
+                    <span class="green-color">Lorem Ipsum</span> is simply dummy Lorem Ipsum is simply dummy
+                </li>
+                <li class="questions-li">
+                    <span class="green-color">Lorem Ipsum</span> is simply dummy Lorem Ipsum is simply dummy
+                </li>
+
+            </ul>
+
+        </div>
+    </section>
+    <div class="overlay"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="assets/js/index.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/16.0.4/js/intlTelInput.js"></script>
+<script>
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input);
+</script>
+</body>
+</html>
